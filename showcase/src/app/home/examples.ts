@@ -1,4 +1,4 @@
-export const InstallExample = `npm install --save @sersol/ngx`;
+export const InstallExample = `npm install --save @sersol/ngx-leaflet`;
 
 export const PrefersColorSchemeExample =
 `import { PrefersColorScheme } from '@sersol/ngx';
