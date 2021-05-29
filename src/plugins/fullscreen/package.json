@@ -1,4 +1,4 @@
 {
-    "name": "@sersol/leaflet-plugins/leaflet-fullscreen",
+    "name": "leaflet-fullscreen",
     "main": "main.js"
 }

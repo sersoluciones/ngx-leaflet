@@ -1,6 +1,7 @@
 import { Component, Injector } from '@angular/core';
 import { BaseView } from './base/base-view';
 import * as examples from './app.examples';
+import { PrefersColorSchemeService } from '@sersol/ngx';
 
 @Component({
     selector: 'app-root',
@@ -11,7 +12,7 @@ export class AppComponent extends BaseView {
 
     examples = examples;
 
-    constructor(protected injectorObj: Injector) {
+    constructor(protected injectorObj: Injector, public colorScheme: PrefersColorSchemeService) {
         super(injectorObj);
     }
 

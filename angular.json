@@ -3,11 +3,11 @@
     "version": 1,
     "newProjectRoot": "",
     "projects": {
-        "ngx": {
+        "ngx-leaflet": {
             "projectType": "library",
             "root": "",
             "sourceRoot": "src",
-            "prefix": "ngx",
+            "prefix": "ngx-leaflet",
             "architect": {
                 "build": {
                     "builder": "@angular-devkit/build-angular:ng-packagr",

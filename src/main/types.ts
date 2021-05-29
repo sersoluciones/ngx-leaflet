@@ -1,6 +1,4 @@
 import * as L from 'leaflet';
-import 'leaflet.markercluster';
-import '@sersol/leaflet-plugins/leaflet-fullscreen';
 
 export interface LatLng {
     lat: number;
@@ -44,12 +42,12 @@ export interface LeafletMapOptions {
     };
     layers?: any;
     mapOptions?: L.MapOptions;
-    fullscreen?: L.Control.FullscreenOptions;
+    fullscreen?: any; // L.Control.FullscreenOptions;
     zoomControl?: boolean;
     zoom?: L.Control.ZoomOptions;
     layersControl?: boolean;
     layersOptions?: L.Control.LayersOptions;
-    mousePositionOptions?: L.Control.MousePositionOptions;
+    mousePositionOptions?: any; // L.Control.MousePositionOptions;
 }
 
 export interface LeafletPadding {

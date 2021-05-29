@@ -4,6 +4,6 @@
   "peerDependencies": {
     "@angular/common": ">=12",
     "@angular/core": ">=12",
-    "@sersol/ngx": ">=0.34"
+    "@sersol/ngx": ">=0.35"
   }
 }

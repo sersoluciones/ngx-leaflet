@@ -3,7 +3,7 @@
  */
 
 // Map
-export * from './map/types';
-export * from './map/map.service';
-export * from './map/providers';
-export * from './map/main';
+export * from './main/types';
+export * from './main/map.service';
+export * from './main/providers';
+export * from './main/map';

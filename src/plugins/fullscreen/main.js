@@ -13,7 +13,7 @@
         factory(window.L);
     }
 }(function (L) {
-    
+
     L.Control.Fullscreen = L.Control.extend({
         options: {
             position: 'topleft',

@@ -60,11 +60,11 @@ export class LeafletMap {
         });
 
         if (this.options.mousePositionOptions.enable) {
-            this.map.addControl(new L.Control.MousePosition(this.options.mousePositionOptions));
+            // this.map.addControl(new L.Control.MousePosition(this.options.mousePositionOptions));
         }
 
         if (this.options.fullscreen.enable) {
-            this.map.addControl(new L.Control.Fullscreen(this.options.fullscreen));
+            // this.map.addControl(new L.Control.Fullscreen(this.options.fullscreen));
         }
 
         if (this.options.layersControl) {
@@ -86,10 +86,8 @@ export class LeafletMap {
     }
 
     initMarkerCluster() {
-        if (L.MarkerClusterGroup) {
-            this.markerCluster = new L.MarkerClusterGroup(this.options.clusterMarkers.config);
-            this.map.addLayer(this.markerCluster);
-        }
+        this.markerCluster = new L.MarkerClusterGroup(this.options.clusterMarkers.config);
+        this.map.addLayer(this.markerCluster);
     }
 
     fitMarkersBounds(padding?: LeafletPadding, flyTo?: boolean) {

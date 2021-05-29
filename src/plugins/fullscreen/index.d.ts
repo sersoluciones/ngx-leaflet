@@ -2,7 +2,8 @@ import * as L from 'leaflet';
 
 declare module 'leaflet' {
     namespace Control {
-        class Fullscreen extends Control {
+
+        class Fullscreen extends L.Control {
             constructor(options?: FullscreenOptions);
             options: FullscreenOptions;
         }
@@ -10,7 +11,7 @@ declare module 'leaflet' {
         interface FullscreenOptions {
             enable?: boolean;
             content?: string;
-            position?: ControlPosition;
+            position?: L.ControlPosition;
             title?: {
                 false?: string;
                 true?: string;
@@ -34,6 +35,7 @@ declare module 'leaflet' {
         fullscreenControl?: boolean;
         fullscreenControlOptions?: Control.FullscreenOptions;
     }
+
 
     interface Map {
         toggleFullScreen(): void;

@@ -2,37 +2,14 @@
 @import "~leaflet/dist/leaflet.css";
 
 /* You can add global styles to this file, and also import other style files */
-@import '../../src/styles/autocomplete.scss';
-@import '../../src/styles/badge.scss';
-@import '../../src/styles/breadcrumb.scss';
-@import '../../src/styles/button.scss';
-@import '../../src/styles/chip.scss';
-@import '../../src/styles/dialog.scss';
-@import '../../src/styles/dropzone.scss';
-@import '../../src/styles/address.scss';
-@import '../../src/styles/date.scss';
-@import '../../src/styles/form.scss';
-@import '../../src/styles/image.scss';
-@import '../../src/styles/layout.scss';
-@import '../../src/styles/loader.scss';
-@import '../../src/styles/pin.scss';
-@import '../../src/styles/preview-file.scss';
-@import '../../src/styles/print.scss';
-@import '../../src/styles/select.scss';
-@import '../../src/styles/filter.scss';
-@import '../../src/styles/slider.scss';
-@import '../../src/styles/snackbar.scss';
-@import '../../src/styles/step.scss';
-@import '../../src/styles/svg.scss';
-@import '../../src/styles/switch.scss';
-@import '../../src/styles/table.scss';
-@import '../../src/styles/tooltip.scss';
-@import '../../src/styles/treeview.scss';
-@import '../../src/styles/typography.scss';
-@import '../../src/styles/week.scss';
-@import '~@sersol/leaflet-plugins/leaflet-fullscreen/main';
-@import '~@sersol/leaflet-plugins/leaflet-mouseposition/main';
-@import '../../src/styles/default-theme.scss';
+@import '~@sersol/ngx/styles/mixins';
+@import '~@sersol/ngx/styles/typography';
+@import '~@sersol/ngx/styles/layout';
+@import '~@sersol/ngx/styles/loader';
+@import '~@sersol/ngx/styles/select';
+@import '~@sersol/ngx/styles/snackbar';
+@import '~@sersol/ngx/styles/button';
+@import '~@sersol/ngx/styles/default-theme';
 
 @import '~highlight.js/styles/gruvbox-dark.css';
 

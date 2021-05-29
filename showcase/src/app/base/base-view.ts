@@ -1,8 +1,8 @@
-import { SnackbarService } from './../../../../src/ui/snackbar.service';
 import { OnInit, AfterViewInit, Injector, Directive, OnChanges, SimpleChanges } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { DomSanitizer } from '@angular/platform-browser';
 import { HttpClient } from '@angular/common/http';
+import { SnackbarService } from '@sersol/ngx';
 
 @Directive()
 // tslint:disable-next-line: directive-class-suffix
