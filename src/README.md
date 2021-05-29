@@ -1,4 +1,4 @@
-# NGX-UI
+# NGX-LEAFLET
 
 Librería Angular (v12+) orientado al montaje de mapas Leaflet rápidos e intuitivos
 

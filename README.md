@@ -1,15 +1,15 @@
-# NGX-UI
+# NGX-LEAFLET
 
-Librería Angular (v9+) orientado al montaje de interfaces rápidas e intuitivas
+Librería Angular (v12+) orientado al montaje de mapas Leaflet rápidos e intuitivos
 
 ___
 
-***Demostraciones:*** <a href="https://sersoluciones.github.io/ngx/" target="_blank">Clic aquí</a>
+***Demostraciones:*** <a href="https://sersoluciones.github.io/ngx-leaflet/" target="_blank">Clic aquí</a>
 
-***Documentación***: <a href="https://sersoluciones.github.io/ngx-doc/" target="_blank">Clic aquí</a>
+***Documentación***: <a href="https://sersoluciones.github.io/ngx-doc-leaflet/" target="_blank">Clic aquí</a>
 
 ___
 
 Instala via npm
 
-    npm install --save @sersol/ngx
+    npm install --save @sersol/ngx-leaflet
