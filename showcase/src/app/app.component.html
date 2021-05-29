@@ -1,0 +1,33 @@
+<div class="toolbar" role="banner">
+    <a routerLink="">
+        <img src="assets/logo.svg" alt="SERSOL">
+    </a>
+    <span  routerLink="">@SERSOL/NGX-LEAFLET</span>
+    <div class="flex"></div>
+    <button class="bttn icon" (click)="colorScheme.toggle()" title="Activar/Desactivar tema oscuro">
+        <span class="material-icons">invert_colors</span>
+    </button>
+    <a href="https://www.facebook.com/sersolucionessas/" target="_blank" rel="noopener noreferrer">
+        <img src="assets/facebook.svg" alt="Facebook" class="social-logo">
+    </a>
+    <a href="https://github.com/sersoluciones/ngx-leaflet" target="_blank" rel="noopener noreferrer">
+        <img src="assets/github.svg" alt="Github" class="social-logo">
+    </a>
+</div>
+
+<div class="site">
+    <div class="sidebar" role="menu">
+
+        <div class="item" role="menuitem">
+            <h3>Principal</h3>
+            <div class="subitems">
+                <a routerLinkActive="active" routerLink="/">Botones</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="content" role="main">
+        <router-outlet></router-outlet>
+    </div>
+</div>
