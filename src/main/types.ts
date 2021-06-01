@@ -40,7 +40,6 @@ export interface LeafletMapOptions {
         enable?: boolean;
         config?: L.MarkerClusterGroupOptions;
     };
-    layers?: any;
     mapOptions?: L.MapOptions;
     fullscreen?: any; // L.Control.FullscreenOptions;
     zoomControl?: boolean;

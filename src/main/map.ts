@@ -29,10 +29,8 @@ export class LeafletMap {
             enable: true
         },
         layersControl: true,
-        layers: LEAFLET_MAP_LAYERS,
         mapOptions: {
             attributionControl: false,
-            layers: [LEAFLET_MAP_LAYERS.Mapa],
             zoomControl: false
         },
         layersOptions: {
@@ -41,16 +39,22 @@ export class LeafletMap {
         zoomControl: true
     };
 
-    constructor(options: LeafletMapOptions) {
+    constructor(options: LeafletMapOptions, defaultLayer?: string, layers?: any) {
 
         mergeObjs(this.options, options);
 
-        if (options.layers) {
-            this.options.layers = options.layers;
+        let currentLayers: any;
+
+        if (layers) {
+            currentLayers = layers;
+        } else {
+            currentLayers = LEAFLET_MAP_LAYERS;
         }
 
-        if (options.mapOptions?.layers) {
-            this.options.mapOptions.layers = options.mapOptions?.layers;
+        if (defaultLayer) {
+            this.options.mapOptions.layers = [currentLayers[defaultLayer]];
+        } else {
+            this.options.mapOptions.layers = [currentLayers.Mapa];
         }
 
         this.map = new L.Map(this.options.container, this.options.mapOptions);
@@ -68,7 +72,7 @@ export class LeafletMap {
         }
 
         if (this.options.layersControl) {
-            this.layerControl = new L.Control.Layers(this.options.layers, null, this.options.layersOptions);
+            this.layerControl = new L.Control.Layers(currentLayers, null, this.options.layersOptions);
             this.map.addControl(this.layerControl);
         }
 
