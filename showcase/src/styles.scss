@@ -11,7 +11,7 @@
 @import '~@sersol/ngx/styles/button';
 @import '~@sersol/ngx/styles/default-theme';
 
-@import '~highlight.js/styles/gruvbox-dark.css';
+@import '~highlight.js/styles/github-dark.css';
 
 
 @import './styles/main.scss';
@@ -19,6 +19,7 @@
 :root {
     --font-family-primary: 'Poppins', sans-serif;
     --scrollbar-thumb-color-bg: #555555;
+    --code-example-bg: #0d1117;
 }
 
 body {

@@ -18,7 +18,7 @@ p {
     > .code {
         flex: 1;
         padding: 16px;
-        border: 2px solid #282828;
+        border: 2px solid var(--code-example-bg);
 
         h3 {
             text-align: center;
@@ -55,6 +55,8 @@ p {
         border-radius: 12px 0 0 12px;
         background-color: #282828;
         max-width: 50%;
+        padding: 16px;
+        margin-top: 0;
         --scrollbar-thumb-color-bg: #a2a2a2;
 
         @media (max-width: 800px) {
@@ -80,8 +82,10 @@ p {
 
 .code {
     position: relative;
+    padding: 32px;
+    margin-top: 32px;
     border-radius: 12px;
-    background-color: #282828;
+    background-color: var(--code-example-bg);
 
     .body {
         flex-direction: row;
